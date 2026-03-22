@@ -8,7 +8,7 @@ const Footer = () => {
 
     return (
         <footer className="bg-surfaceLight pt-16 pb-8 border-t border-white/5 relative overflow-hidden">
-            <motion.div
+            <motion.div 
                 animate={{ x: ["-100%", "100%"] }}
                 transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
                 className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-primary to-transparent opacity-50"
@@ -20,7 +20,7 @@ const Footer = () => {
                     <div className="md:col-span-2">
                         <Link to="home" smooth={true} duration={500} className="inline-block cursor-pointer mb-6 transform transition-transform hover:scale-105">
                             <span className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary animate-shimmer bg-[length:200%_auto]">
-                                Dev2x.
+                                ApexSaaS.
                             </span>
                         </Link>
                         <p className="text-textMuted max-w-sm mb-6 leading-relaxed">
@@ -31,9 +31,9 @@ const Footer = () => {
                                 { icon: <Twitter size={18} />, href: "#" },
                                 { icon: <Linkedin size={18} />, href: "#" },
                                 { icon: <Github size={18} />, href: "#" },
-                                { icon: <Mail size={18} />, href: "mailto:hello@dev2x.com" }
+                                { icon: <Mail size={18} />, href: "mailto:hello@apexsaas.com" }
                             ].map((social, i) => (
-                                <motion.a
+                                <motion.a 
                                     key={i}
                                     href={social.href}
                                     whileHover={{ y: -5, scale: 1.1 }}
@@ -75,11 +75,11 @@ const Footer = () => {
 
                 <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center px-4">
                     <p className="text-textMuted text-sm mb-4 md:mb-0">
-                        &copy; {currentYear} Dev2x. All rights reserved.
+                        &copy; {currentYear} ApexSaaS Agency. All rights reserved.
                     </p>
-                    {/* <div className="flex items-center gap-2 text-sm text-textMuted">
+                    <div className="flex items-center gap-2 text-sm text-textMuted">
                         <span>Built with <span className="text-red-500">♥</span> using React & Tailwind</span>
-                    </div> */}
+                    </div>
                 </div>
             </div>
         </footer>

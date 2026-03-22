@@ -28,7 +28,7 @@ const Navbar = () => {
                     <div className="flex-shrink-0 cursor-pointer">
                         <Link to="home" smooth={true} duration={500}>
                             <span className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">
-                                Dev2x.
+                                ApexSaaS.
                             </span>
                         </Link>
                     </div>
